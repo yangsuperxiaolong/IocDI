@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+        <!--依赖注入方式-->
+        <!--把类对象都交给Spring管理-->
+        <!--Computer-->
+        <!--<bean id="cpid" class="com.hnust.simpleclass.Compupter" >
+                &lt;!&ndash;设置接口变量值(设值注入方式)&ndash;&gt;
+                <property name="usb" ref="upid"></property>
+                &lt;!&ndash;设置接口变量值(构造注入方式)&ndash;&gt;
+                &lt;!&ndash;
+                <constructor-arg ref="upid"></constructor-arg>
+                &ndash;&gt;
+        </bean>
+        &lt;!&ndash;U盘&ndash;&gt;
+        <bean id="upid" class="com.hnust.simpleclass.UDisk"></bean>
+        &lt;!&ndash;移动硬盘&ndash;&gt;
+        <bean id="movedid" class="com.hnust.simpleclass.MoveDisk"></bean>-->
+        <!--依赖查找方式-->
+        <!--开启组件扫描-->
+        <context:component-scan base-package="com.hnust"/>
+</beans>
